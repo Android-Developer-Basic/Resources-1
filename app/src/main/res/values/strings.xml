@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name" translatable="false">AppResources</string>
     <string name="hello_world">Hello World!</string>
+     <!--
+      - %d - шаблон для замены.
+      - % - начало шаблона,
+      - d - тип передаваемого аргумента
+      -->
+    <string name="cats_in_house" translatable="false">Cats in the house: %d</string>
 </resources>
