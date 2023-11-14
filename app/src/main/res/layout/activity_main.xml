@@ -28,4 +28,26 @@
         app:layout_constraintTop_toBottomOf="@id/cats_in_house"
         tools:text="Name of Cat is Tom. Tom is a Cat" />
 
+    <TextView
+        android:id="@+id/cat_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animal_name"
+        tools:text="The cat weights 7.45 kilos" />
+
+    <TextView
+        android:id="@+id/cat_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cat_weight"
+        tools:text="Cat\'s birthday is on: Oct 17 2007" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

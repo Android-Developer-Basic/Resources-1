@@ -11,4 +11,10 @@
 
     <!-- 1$s - обозначает номер переданного аргумента и его тип -->
     <string name="animal_name" translatable="false">Name of the %1$s is %2$s. %2$s is a %1$s</string>
+
+    <!-- .2f - кол-во цифр после запятой -->
+    <string name="cat_weight" translatable="false">The cat weights %.2f kilos</string>
+
+    <!-- t - тип аргумента - время, b,e,Y - флаги специфичные для данного типа -->
+    <string name="cats_birthday" translatable="false">Cat\'s birthday is on: %1$tb %1$te %1$tY</string>
 </resources>
