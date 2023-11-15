@@ -2,7 +2,9 @@ package otus.gpb.appresources
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import java.time.LocalDate
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var bdOfCat: TextView
     private lateinit var catName: TextView
     private lateinit var catCount: TextView
+    private lateinit var vector: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +38,9 @@ class MainActivity : AppCompatActivity() {
 
         catCount = findViewById(R.id.cat_count)
         fillCatCount()
+
+        vector = findViewById(R.id.vector)
+        setImage()
     }
 
     private fun setCatsInHouse() {
@@ -68,5 +74,10 @@ class MainActivity : AppCompatActivity() {
         catCount.text = counts.joinToString("\n") { i ->
             resources.getQuantityString(R.plurals.cats_quantity, i, i)
         }
+    }
+
+    private fun setImage() {
+        val drawable = ContextCompat.getDrawable(this, R.drawable.satisfied)
+        vector.setImageDrawable(drawable)
     }
 }
