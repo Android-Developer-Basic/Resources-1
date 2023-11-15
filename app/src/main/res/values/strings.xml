@@ -26,4 +26,10 @@
         <item>Murka</item>
         <item>Pushok</item>
     </array>
+
+    <!-- Множественное число (plurals), см. русские ресурсы для иллюстрации -->
+    <plurals name="cats_quantity">
+        <item quantity="one">I have %d cat</item>
+        <item quantity="other">I have %d cats</item>
+    </plurals>
 </resources>

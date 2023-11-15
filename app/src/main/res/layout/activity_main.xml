@@ -61,4 +61,15 @@
         app:layout_constraintTop_toBottomOf="@id/cat_birthday"
         tools:text="Cat name is: Murzik" />
 
+    <TextView
+        android:id="@+id/cat_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cat_name"
+        tools:text="У меня 100500 котов" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

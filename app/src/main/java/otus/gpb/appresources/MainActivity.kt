@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var weightOfCat: TextView
     private lateinit var bdOfCat: TextView
     private lateinit var catName: TextView
+    private lateinit var catCount: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +32,9 @@ class MainActivity : AppCompatActivity() {
 
         catName = findViewById(R.id.cat_name)
         setArrayElement()
+
+        catCount = findViewById(R.id.cat_count)
+        fillCatCount()
     }
 
     private fun setCatsInHouse() {
@@ -57,5 +61,12 @@ class MainActivity : AppCompatActivity() {
             R.string.cat_name_prefix,
             resources.getStringArray(R.array.cat_names)[1]
         )
+    }
+
+    private fun fillCatCount() {
+        val counts = listOf(0, 1, 3, 4, 5, 10, 102)
+        catCount.text = counts.joinToString("\n") { i ->
+            resources.getQuantityString(R.plurals.cats_quantity, i, i)
+        }
     }
 }
