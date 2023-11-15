@@ -5,4 +5,5 @@
 
     <color name="button_unpressed">#FFFF0000</color>
     <color name="button_pressed">#FF00FF00</color>
+    <color name="icon_color">#FF0000FF</color>
 </resources>
