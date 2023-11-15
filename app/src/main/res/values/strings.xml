@@ -17,4 +17,13 @@
 
     <!-- t - тип аргумента - время, b,e,Y - флаги специфичные для данного типа -->
     <string name="cats_birthday" translatable="false">Cat\'s birthday is on: %1$tb %1$te %1$tY</string>
+
+    <string name="cat_name_prefix">Cat name is: %s</string>
+
+    <!-- Массив строчек -->
+    <array name="cat_names">
+        <item>Murzik</item>
+        <item>Murka</item>
+        <item>Pushok</item>
+    </array>
 </resources>

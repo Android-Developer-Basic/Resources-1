@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var animalName: TextView
     private lateinit var weightOfCat: TextView
     private lateinit var bdOfCat: TextView
+    private lateinit var catName: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +28,9 @@ class MainActivity : AppCompatActivity() {
 
         bdOfCat = findViewById(R.id.cat_birthday)
         setCatBd()
+
+        catName = findViewById(R.id.cat_name)
+        setArrayElement()
     }
 
     private fun setCatsInHouse() {
@@ -45,6 +49,13 @@ class MainActivity : AppCompatActivity() {
         bdOfCat.text = getString(
             R.string.cats_birthday,
             LocalDate.of(2007, 10, 17)
+        )
+    }
+
+    private fun setArrayElement() {
+        catName.text = getString(
+            R.string.cat_name_prefix,
+            resources.getStringArray(R.array.cat_names)[1]
         )
     }
 }

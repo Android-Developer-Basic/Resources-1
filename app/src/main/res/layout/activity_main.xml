@@ -50,4 +50,15 @@
         app:layout_constraintTop_toBottomOf="@id/cat_weight"
         tools:text="Cat\'s birthday is on: Oct 17 2007" />
 
+    <TextView
+        android:id="@+id/cat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cat_birthday"
+        tools:text="Cat name is: Murzik" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

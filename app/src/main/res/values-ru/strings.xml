@@ -1,3 +1,10 @@
 <resources>
     <string name="hello_world">Здравствуй, родной!</string>
+
+    <string name="cat_name_prefix">Имя кота: %s</string>
+    <array name="cat_names">
+        <item>Мурзик</item>
+        <item>Мурка</item>
+        <item>Пушок</item>
+    </array>
 </resources>
